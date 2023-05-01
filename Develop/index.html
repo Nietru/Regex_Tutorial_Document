@@ -21,7 +21,9 @@
       My Regex (AKA Regular Expressions) - Tutorial Notes
     </h1>
     <h2 class="col-12"> What is a meta character?</h2>
-      <section class="section1">There will be subtle differences in what the meta-characters ARE depending on the programming language.</br></br>
+
+      <section class="section1">There will be subtle differences in what the meta-characters ARE depending on the programming language.</br>
+       Link for meta-character tutorial:  https://www.youtube.com/watch?v=YTocEnDsMNw</br>
         Meta-characters have 3 main sections:</br>
         <ol class="meta-list">
             <li>Single Chars: (sidenote: if you were to do a capital \D, it would be anything that ISNT a digit. Same with \W and \S) It represents the opposite.</br>
@@ -30,9 +32,30 @@
                          \s -> Whitespace</br>
                          . -> ANY character what-so-ever!</br></br>
             </li>
-            <li>Quantifiers:
-            </li>
+            <li>Quantifiers: Meta-characters that will match one or more characters in a row. We can find all 5 letter words like so: \s\w{5}\s</br>
+                        * -> 0 or more.</br>
+                        + -> 1 or more.</br>
+                        ? -> 0 or 1.</br>
+                        {min, max}</br>
+                        {n} </br>
+            </li></br>
+            <li>Position: Matches the position of a character IN the string itself: </br>
+                (sidenote: )
+                        ^ -> "Hat" or "Carrot" Beginning.</br>
+                        $ -> End.</br>
+                        \b -> Word boundary.</br>
+            </li></br>
+            <li>Character Classes: Matching:</br>
+                Link to tutorial: https://www.youtube.com/watch?v=EfJU0Y9WAZ4 </br>
+                        [ abc ] A bracket is not a meta character. Match any one the characters inside of the brackets.</br>
+                        [ -. ] (sidenote: a dot inside of a character class is no longer a meta character.)</br>
+            </li></br>
+            <li>Alternation: </br>
+                        \. -> means literal dot.</br>
+
+            </li></br>
         </ol>
+
       </section>
 
     <script
